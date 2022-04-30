@@ -1,0 +1,8 @@
+git clone ..
+git remote ..
+alias graph=git log --all --decorate --oneline --graph
+git add .
+git commit -am ""
+git push
+git branch (nama branch)
+git checkout (nama branch
