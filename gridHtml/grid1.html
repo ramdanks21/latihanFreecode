@@ -1,0 +1,58 @@
+<style>
+  .d1 {
+    background: LightSkyBlue;
+  }
+  .d2 {
+    background: LightSalmon;
+  }
+  .d3 {
+    background: PaleTurquoise;
+    /* untuk meng verticalkan grid */
+    /* justify-self: center;
+    align-self: center; */
+    /* untuk menggunakan item sesuai grid */
+    grid-area: header;
+  }
+  .d4 {
+    background: LightPink;
+    /* note value pertama baris 2 column 3 baris 4 colum
+    jadi yang di gunakan bari 1 - 2 dan column 1 dan 4
+     */
+    grid-area: 1/1/2/4;
+  }
+  .d5 {
+    background: PaleGreen;
+    /* unutk melebarkan / merentangkan grid */
+    /* grid-column: 2 / 3; */
+    /* untuk mengasih spasi pada grid */
+    /* grid-row: 2 / 4; */
+  }
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    grid-template-areas:
+      "header header header"
+      "conten conten conten"
+      "footer footer footer";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Only change code below this line */
+    /* untuk mensejajarkan semua grid dari kiri - center - kanan atau secara horizontal */
+    /* justify-items: center;
+    align-items: center; */
+    /* Only change code above this line */
+    grid-gap: 10px 20px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
