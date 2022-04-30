@@ -6,3 +6,4 @@ git commit -am ""
 git push
 git branch (nama branch)
 git checkout (nama branch
+git merge (nama yang akan di merege)
