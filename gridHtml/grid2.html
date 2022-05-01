@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
   .item1 {
     background: LightSkyBlue;
   }
@@ -23,32 +23,19 @@
     min-height: 300px;
     width: 100%;
     background: LightGray;
-    display: grid;
-    /* Only change code below this line */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* untuk mengulangi repeat grid(nilai pertama 3x repeat, nilai kedua untuk ukuran 1fr) */
-    /* grid-template-columns: repeat(3, minmax(90px, 1fr)); */
-    /* value pertama untuk mengulangi 3x, value ke -2 untuk lebarminum, value ke 3 lebarmaximum */
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-
-    /* Only change code above this line */
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-  .container2 {
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    font-size: 40px;
-    min-height: 100px;
-    width: 100%;
-    background: Silver;
-    display: grid;
-    /* Only change code below this line */
-
-    /* Only change code above this line */
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-  }
-</style>
+    display: grid; -->
+/* Only change code below this line */ /* grid-template-columns: repeat(3, 1fr);
+*/ /* untuk mengulangi repeat grid(nilai pertama 3x repeat, nilai kedua untuk
+ukuran 1fr) */ /* grid-template-columns: repeat(3, minmax(90px, 1fr)); */ /*
+value pertama untuk mengulangi 3x, value ke -2 untuk lebarminum, value ke 3
+lebarmaximum */ /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+*/ /* Only change code above this line */ /* grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px; } */ /* .container2 { grid-template-columns: repeat(auto-fit,
+minmax(60px, 1fr)); font-size: 40px; min-height: 100px; width: 100%; background:
+Silver; display: grid; */ /* Only change code below this line */ /* Only change
+code above this line */ /* grid-template-rows: 1fr 1fr 1fr; grid-gap: 10px; /* }
+*/
+<!-- </style>
 
 <div class="container">
   <div class="item1">1</div>
@@ -64,4 +51,62 @@
   <div class="item3">3</div>
   <div class="item4">4</div>
   <div class="item5">5</div>
+</div> -->
+
+<style>
+  .container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    /* Only change code below this line */
+    grid-template-columns: auto 1fr;
+    /* Only change code above this line */
+    display: grid;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .itemOne {
+    background: PaleGreen;
+  }
+
+  .itemTwo {
+    background: BlanchedAlmond;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">advert</div>
+  <div class="item3">
+    <div class="itemOne">paragraph1</div>
+    <div class="itemTwo">paragraph2</div>
+  </div>
+  <div class="item4">footer</div>
 </div>
