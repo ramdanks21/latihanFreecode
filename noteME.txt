@@ -9,3 +9,4 @@ git checkout (nama branch
 git merge (nama yang akan di merege)
 git config --global --user.name "ramdankhan"
 git config --global --user.email "ramdankhan"
+git fetch (nama origin)
