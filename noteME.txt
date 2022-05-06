@@ -12,3 +12,4 @@ git config --global --user.name "ramdankhan"
 git config --global --user.email "ramdankhan"
 git fetch (nama origin)
 git branch -d (nama branch) menghapus branch
+git checkout -b "nama branch" (untuk membuat branc + switch ke branch baru") 
